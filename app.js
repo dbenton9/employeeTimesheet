@@ -49,4 +49,5 @@ $("#submit").on('click', function(){
       console.log(sv.email);
       console.log(sv.age);
       console.log(sv.comment);
-})
+    });
+});
