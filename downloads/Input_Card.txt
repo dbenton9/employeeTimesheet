@@ -1,0 +1,35 @@
+<div class="wrap">
+        <div class="container">
+
+            <!--Input row-->
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <h5 class="card-header">Add Employee</h5>
+                        <form>
+                        <div class="form-group">
+                            <label for="searchTerm"><b>Employee Name</b></label>
+                            <input type="text" class="form-control" id="name-input" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="searchTerm"><b>Role</b></label>
+                            <input type="text" class="form-control" id="role-input" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="searchTerm"><b>Start Date (DD/MM/YY)</b></label>
+                            <input type="text" class="form-control" id="start-input" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="searchTerm"><b>Monthly Rate</b></label>
+                            <input type="text" class="form-control" id="rate-input" placeholder="">
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-primary">Submit</button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
