@@ -1,4 +1,4 @@
-<!-- Template -->
+<!-- In-class group project -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,10 +6,10 @@
 
   <meta charset="UTF-8">
 
+  <title>Employee Data Management</title>
+
   <!-- Media Query Tag -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Template</title>
 
   <!-- Added link to the jQuery Library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -21,27 +21,63 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
   <!-- custom css -->
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- Firebase Reference -->
+  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
 
 </head>
 
 <!-- Visible Website Content -->
 <body>
-
-  <!-- Page Header -->
-  <header>
-
-  </header>
+  
+  <!-- ///////////////////////////->
+  <!-- Allie's Header (jumbotron) -->
 
 
+  <!-- ///////////////////////////->
+  <!-- Current Employee Container -->
 
-  <!-- Page footer -->
-  <footer>
 
-  </footer>
+  <!-- ///////////////////////////->
+  <!-- Keivon's Form -->
+  <div class="wrap">
+    <div class="container">
+        <!--Input row-->
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <h5 class="card-header">Add Employee</h5>
+                    <form>
+                    <div class="form-group">
+                        <label for="searchTerm"><b>Employee Name</b></label>
+                        <input type="text" class="form-control" id="name-input" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="searchTerm"><b>Role</b></label>
+                        <input type="text" class="form-control" id="role-input" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="searchTerm"><b>Start Date (DD/MM/YY)</b></label>
+                        <input type="text" class="form-control" id="start-input" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="searchTerm"><b>Monthly Rate</b></label>
+                        <input type="text" class="form-control" id="rate-input" placeholder="">
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-primary">Submit</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+     </div>
+  </div>
+
   
   <!-- Page javascript/jquery -->
-  <script type="text/javascript" src="assets/javascript/game.js">
+  <script type="text/javascript" src="app.js">
   </script>
 
 </body>
