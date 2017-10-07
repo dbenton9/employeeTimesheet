@@ -20,19 +20,19 @@ firebase.initializeApp(config);
 
 
 $("#submit").on('click', function(){
-	event.preventDefault();
-	
-	name = $('#name-input').val().trim();
-	role = $('#role-input').val().trim();
-	startDate = $('#start-input').val().trim();
-	rate = $('#rate-input').val().trim();
+  event.preventDefault();
+  
+  name = $('#name-input').val().trim();
+  role = $('#role-input').val().trim();
+  startDate = $('#start-input').val().trim();
+  rate = $('#rate-input').val().trim();
 
-	console.log(name);
-	console.log(role);
-	console.log(startDate);
-	console.log(rate);
+  console.log(name);
+  console.log(role);
+  console.log(startDate);
+  console.log(rate);
 
-	database.ref().push({
+  database.ref().push({
         name: name,
         role: role,
         startDate: startDate,
@@ -46,8 +46,31 @@ $("#submit").on('click', function(){
 
       // Console.loging the last user's data
       console.log(sv.name);
-      console.log(sv.email);
-      console.log(sv.age);
-      console.log(sv.comment);
+      console.log(sv.role);
+      console.log(sv.startDate);
+      console.log(sv.rate);
+      console.log(sv.dateAdded);
+
+      //Append to div elements
+      //Declare new table row
+      var newTable = $("<tr>");
+      //Declare new table data cells
+      var newName = $("<td>"), newRole = $("<td>"), newStart = $("<td>"), 
+        newMonths = $("<td>"), newRate = $("<td>"), newBilled = $("<td>");
+      
+      newName = newName.prepend(sv.name);
+      newRole = newRole.prepend(sv.role);
+      newStart = newStart.prepend(sv.start);
+      newMonths = newMonths.prepend("NaN");
+      newRate = newRate.prepend(sv.rate);
+      newBilled = newBilled.prepend("NaN");
+
+      newTable.append(newName, newRole, newStart, newMonths, newRate, newBilled);
+      $("tbody").append(newTable);
+
+      
     });
+
+
+
 });
